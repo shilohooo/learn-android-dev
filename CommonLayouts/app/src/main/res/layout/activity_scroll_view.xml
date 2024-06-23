@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityScrollView">
+    <!--滚动视图 demo-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <!--        HorizontalScrollView - 水平方向的滚动视图-->
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="200dp">
+
+            <!--            水平方向的线性布局-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/primary" />
+
+                <View
+                    android:layout_width="300dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/success" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <!--
+        ScrollView - 垂直方向的滚动视图
+        如果滚动视图中的实际内容不够多，又想让它充满屏幕，可以添加以下两个属性：
+        android:layout_height="match_parent"
+        android:fillViewport="true" - 允许填满视图窗口
+        -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--            垂直方向的线性布局-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:background="@color/warning" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:background="@color/error" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
