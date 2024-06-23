@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Primary"
+    android:orientation="vertical"
+    tools:context=".ActivityViewMargin">
+    <!--
+    视图见图 DEMO
+    margin - 外边距，指的是当前视图与外部视图（包括上级和同级视图）之间的距离
+    对应属性：
+    android:layout_margin - 一次性设置上下左右四个方向的边距
+    android:layout_marginLeft - 设置左边距
+    android:layout_marginRight - 设置右边距
+    android:layout_marginTop - 设置上边距
+    android:layout_marginBottom - 设置下边距
+    padding - 内边距，指的是当前视图与内部视图（包括下级视图和文本）之间的距离
+    对应属性：
+    android:padding - 一次性设置上下左右四个方向的边距
+    android:paddingLeft - 设置左边距
+    android:paddingRight - 设置右边距
+    android:paddingTop - 设置上边距
+    android:paddingBottom - 设置下边距
+    android:paddingStart - 设置开始边距
+    android:paddingEnd - 设置结束边距
+    android:paddingHorizontal - 设置左右边距
+    android:paddingVertical - 设置上下边距
+    -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:background="@color/Warning"
+        android:padding="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/Error" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

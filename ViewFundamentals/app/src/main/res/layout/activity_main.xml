@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--
+    layout_width - 控件宽度
+    layout_height - 控件高度
+    取值有下列3种：
+    1、match_parent - 表示与父控件的宽度保持一致
+    2、wrap_content - 表示与内容自适应，最大不能超过父控件的宽度，一旦超过就要换行，最高不能超过父控件的高度，
+    一旦超过就会被隐藏
+    3、具体数值 - 以 dp 为单位的具体尺寸，如：300dp，表示固定宽高
+    -->
+
+    <TextView
+        android:id="@+id/tvByCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#1989fa"
+        android:text="通过 Java 代码设置控件宽高!"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvByWrapContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#1989fa"
+        android:text="视图宽度采用 wrap_content 定义!"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvByCode" />
+
+    <TextView
+        android:id="@+id/tvByMatchParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#1989fa"
+        android:text="视图宽度采用 match_parent 定义!"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvByWrapContent" />
+
+    <TextView
+        android:id="@+id/tvByFixedVal"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="#1989fa"
+        android:text="视图宽度采用固定尺寸定义!"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvByMatchParent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
