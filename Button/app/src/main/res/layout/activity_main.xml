@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <!--
+        按钮控件由 TextView 派生而来，文本视图拥有的属性和方法，按钮也能使用。
+        按钮的 textAllCaps 表示 是否将按钮的文字转换为大写，默认为：false
+         -->
+        <Button
+            android:id="@+id/caps_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginBottom="12dp"
+            android:text="长按：Hello World"
+            android:textAllCaps="true" />
+
+        <!--
+        按钮的 enabled 属性表示 按钮是否可用，默认为：true，false 表示按钮被禁用
+        禁用状态下的按钮是不能被点击的，背景色、文字颜色变为灰色
+        -->
+        <Button
+            android:id="@+id/lower_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:enabled="false"
+            android:text="点我：Hello World"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/tv_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="12dp"
+            android:layout_marginVertical="12dp"
+            android:padding="12dp"
+            android:text="在这里查看按钮的点击效果~"
+            android:textColor="@color/primary" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
