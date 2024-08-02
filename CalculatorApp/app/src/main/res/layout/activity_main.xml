@@ -15,367 +15,325 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
+        <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:columnCount="4"
+            android:padding="10dp">
 
             <!--            标题-->
             <TextView
                 android:id="@+id/tv_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_columnSpan="4"
                 android:gravity="center"
                 android:padding="10dp"
-                android:text="Simple Calculator App"
+                android:text="@string/app_name"
                 android:textColor="@color/warning"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
-            <GridLayout
+            <!--                计算结果-->
+            <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:columnCount="4"
-                android:padding="10dp">
+                android:layout_columnSpan="4"
+                android:layout_marginBottom="10dp"
+                android:autofillHints="123"
+                android:hint="0"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textAlignment="textEnd"
+                android:textSize="32sp" />
 
-                <EditText
-                    android:layout_marginBottom="10dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_columnSpan="4"
-                    android:autofillHints="123"
-                    android:hint="0"
-                    android:inputType="text"
-                    android:padding="10dp"
-                    android:textAlignment="textEnd"
-                    android:textSize="32sp" />
+            <!--                清除当前操作-->
+            <android.widget.Button
+                android:id="@+id/btn_clear"
+                android:layout_height="68dp"
+                android:layout_columnSpan="2"
+                android:layout_columnWeight="1"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/btn_rounded"
+                android:backgroundTint="@color/sign_btn_bg"
+                android:gravity="center"
+                android:text="Clear"
+                android:textAllCaps="false"
+                android:textColor="@color/error"
+                android:textSize="32sp" />
 
+            <!--                退格-->
+            <android.widget.Button
+                android:id="@+id/btn_backspace"
+                android:layout_height="68dp"
+                android:layout_columnSpan="2"
+                android:layout_columnWeight="1"
+                android:background="@drawable/btn_rounded"
+                android:backgroundTint="@color/sign_btn_bg"
+                android:gravity="center"
+                android:text="Delete"
+                android:textAllCaps="false"
+                android:textColor="@color/warning"
+                android:textSize="32sp" />
 
-                <!--                取模运算符号-->
-                <android.widget.Button
-                    android:id="@+id/btn_modulo_sign"
-                    android:layout_height="68dp"
-                    android:layout_columnWeight="1"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:background="@drawable/btn_rounded"
-                    android:backgroundTint="@color/sign_btn_bg"
-                    android:gravity="center"
-                    android:text="%"
-                    android:textColor="@color/black"
-                    android:textSize="32sp" />
+            <!--                求平方-->
+            <android.widget.Button
+                android:id="@+id/btn_square"
+                android:layout_height="68dp"
+                android:layout_columnSpan="2"
+                android:layout_columnWeight="1"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/btn_rounded"
+                android:backgroundTint="@color/sign_btn_bg"
+                android:gravity="center"
+                android:text="x²"
+                android:textColor="@color/black"
+                android:textSize="32sp" />
 
-                <!--                CE-->
-                <android.widget.Button
-                    android:id="@+id/btn_ce"
-                    android:layout_height="68dp"
-                    android:layout_columnWeight="1"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:background="@drawable/btn_rounded"
-                    android:backgroundTint="@color/sign_btn_bg"
-                    android:gravity="center"
-                    android:text="CE"
-                    android:textColor="@color/black"
-                    android:textSize="32sp" />
+            <!--                取模运算符号-->
+            <android.widget.Button
+                android:id="@+id/btn_modulo_sign"
+                android:layout_height="68dp"
+                android:layout_columnWeight="1"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/btn_rounded"
+                android:backgroundTint="@color/sign_btn_bg"
+                android:gravity="center"
+                android:text="%"
+                android:textColor="@color/black"
+                android:textSize="32sp" />
 
-                <!--                清除当前操作-->
-                <android.widget.Button
-                    android:id="@+id/btn_clear"
-                    android:layout_height="68dp"
-                    android:layout_columnWeight="1"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:background="@drawable/btn_rounded"
-                    android:backgroundTint="@color/sign_btn_bg"
-                    android:gravity="center"
-                    android:text="C"
-                    android:textColor="@color/error"
-                    android:textSize="32sp" />
+            <!--                加法符号-->
+            <android.widget.Button
+                android:id="@+id/btn_plus_sign"
+                android:layout_height="68dp"
+                android:layout_columnWeight="1"
+                android:background="@drawable/btn_rounded"
+                android:backgroundTint="@color/sign_btn_bg"
+                android:gravity="center"
+                android:text="+"
+                android:textColor="@color/black"
+                android:textSize="32sp" />
 
-                <!--                退格-->
-                <android.widget.Button
-                    android:id="@+id/btn_backspace"
-                    android:layout_height="68dp"
-                    android:layout_columnWeight="1"
-                    android:background="@drawable/btn_rounded"
-                    android:backgroundTint="@color/sign_btn_bg"
-                    android:gravity="center"
-                    android:text="DEL"
-                    android:textColor="@color/warning"
-                    android:textSize="32sp" />
+            <!--                数字7-->
+            <android.widget.Button
+                android:id="@+id/btn_7"
+                android:layout_height="68dp"
+                android:layout_columnWeight="1"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/btn_rounded"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:text="7"
+                android:textColor="@color/black"
+                android:textSize="32sp" />
 
-                <!--                1/x-->
-                <android.widget.Button
-                    android:id="@+id/btn_one_over_x"
-                    android:layout_height="68dp"
-                    android:layout_columnWeight="1"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:background="@drawable/btn_rounded"
-                    android:backgroundTint="@color/sign_btn_bg"
-                    android:gravity="center"
-                    android:text="1/x"
-                    android:textColor="@color/black"
-                    android:textSize="32sp" />
+            <!--                数字8-->
+            <android.widget.Button
+                android:id="@+id/btn_8"
+                android:layout_height="68dp"
+                android:layout_columnWeight="1"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/btn_rounded"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:text="8"
+                android:textColor="@color/black"
+                android:textSize="32sp" />
 
-                <!--                求平方-->
-                <android.widget.Button
-                    android:id="@+id/btn_square"
-                    android:layout_height="68dp"
-                    android:layout_columnWeight="1"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:background="@drawable/btn_rounded"
-                    android:backgroundTint="@color/sign_btn_bg"
-                    android:gravity="center"
-                    android:text="x²"
-                    android:textColor="@color/black"
-                    android:textSize="32sp" />
+            <!--                数字9-->
+            <android.widget.Button
+                android:id="@+id/btn_9"
+                android:layout_height="68dp"
+                android:layout_columnWeight="1"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/btn_rounded"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:text="9"
+                android:textColor="@color/black"
+                android:textSize="32sp" />
 
-                <!--                求开方-->
-                <android.widget.Button
-                    android:id="@+id/btn_sqrt"
-                    android:layout_height="68dp"
-                    android:layout_columnWeight="1"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:background="@drawable/btn_rounded"
-                    android:backgroundTint="@color/sign_btn_bg"
-                    android:gravity="center"
-                    android:text="√"
-                    android:textColor="@color/black"
-                    android:textSize="32sp" />
+            <!--                减法符号-->
+            <android.widget.Button
+                android:id="@+id/btn_minus_sign"
+                android:layout_height="68dp"
+                android:layout_columnWeight="1"
+                android:background="@drawable/btn_rounded"
+                android:backgroundTint="@color/sign_btn_bg"
+                android:gravity="center"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textSize="32sp" />
 
-                <!--                除法符号-->
-                <android.widget.Button
-                    android:id="@+id/btn_division_sign"
-                    android:layout_height="68dp"
-                    android:layout_columnWeight="1"
-                    android:background="@drawable/btn_rounded"
-                    android:backgroundTint="@color/sign_btn_bg"
-                    android:gravity="center"
-                    android:text="÷"
-                    android:textColor="@color/black"
-                    android:textSize="32sp" />
+            <!--                数字4-->
+            <android.widget.Button
+                android:id="@+id/btn_4"
+                android:layout_height="68dp"
+                android:layout_columnWeight="1"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/btn_rounded"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:text="4"
+                android:textColor="@color/black"
+                android:textSize="32sp" />
 
-                <!--                数字7-->
-                <android.widget.Button
-                    android:id="@+id/btn_7"
-                    android:layout_height="68dp"
-                    android:layout_columnWeight="1"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:background="@drawable/btn_rounded"
-                    android:backgroundTint="@color/white"
-                    android:gravity="center"
-                    android:text="7"
-                    android:textColor="@color/black"
-                    android:textSize="32sp" />
+            <!--                数字5-->
+            <android.widget.Button
+                android:id="@+id/btn_5"
+                android:layout_height="68dp"
+                android:layout_columnWeight="1"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/btn_rounded"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="@color/black"
+                android:textSize="32sp" />
 
-                <!--                数字8-->
-                <android.widget.Button
-                    android:id="@+id/btn_8"
-                    android:layout_height="68dp"
-                    android:layout_columnWeight="1"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:background="@drawable/btn_rounded"
-                    android:backgroundTint="@color/white"
-                    android:gravity="center"
-                    android:text="8"
-                    android:textColor="@color/black"
-                    android:textSize="32sp" />
+            <!--                数字6-->
+            <android.widget.Button
+                android:id="@+id/btn_6"
+                android:layout_height="68dp"
+                android:layout_columnWeight="1"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/btn_rounded"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:text="6"
+                android:textColor="@color/black"
+                android:textSize="32sp" />
 
-                <!--                数字9-->
-                <android.widget.Button
-                    android:id="@+id/btn_9"
-                    android:layout_height="68dp"
-                    android:layout_columnWeight="1"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:background="@drawable/btn_rounded"
-                    android:backgroundTint="@color/white"
-                    android:gravity="center"
-                    android:text="9"
-                    android:textColor="@color/black"
-                    android:textSize="32sp" />
+            <!--                乘法符号-->
+            <android.widget.Button
+                android:id="@+id/btn_multiplication_sign"
+                android:layout_height="68dp"
+                android:layout_columnWeight="1"
+                android:background="@drawable/btn_rounded"
+                android:backgroundTint="@color/sign_btn_bg"
+                android:gravity="center"
+                android:text="x"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="32sp" />
 
-                <!--                乘法符号-->
-                <android.widget.Button
-                    android:id="@+id/btn_multiplication_sign"
-                    android:layout_height="68dp"
-                    android:layout_columnWeight="1"
-                    android:background="@drawable/btn_rounded"
-                    android:backgroundTint="@color/sign_btn_bg"
-                    android:gravity="center"
-                    android:text="X"
-                    android:textColor="@color/black"
-                    android:textSize="32sp" />
+            <!--                数字1-->
+            <android.widget.Button
+                android:id="@+id/btn_1"
+                android:layout_height="68dp"
+                android:layout_columnWeight="1"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/btn_rounded"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="32sp" />
 
-                <!--                数字4-->
-                <android.widget.Button
-                    android:id="@+id/btn_4"
-                    android:layout_height="68dp"
-                    android:layout_columnWeight="1"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:background="@drawable/btn_rounded"
-                    android:backgroundTint="@color/white"
-                    android:gravity="center"
-                    android:text="4"
-                    android:textColor="@color/black"
-                    android:textSize="32sp" />
+            <!--                数字2-->
+            <android.widget.Button
+                android:id="@+id/btn_2"
+                android:layout_height="68dp"
+                android:layout_columnWeight="1"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/btn_rounded"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@color/black"
+                android:textSize="32sp" />
 
-                <!--                数字5-->
-                <android.widget.Button
-                    android:id="@+id/btn_5"
-                    android:layout_height="68dp"
-                    android:layout_columnWeight="1"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:background="@drawable/btn_rounded"
-                    android:backgroundTint="@color/white"
-                    android:gravity="center"
-                    android:text="5"
-                    android:textColor="@color/black"
-                    android:textSize="32sp" />
+            <!--                数字3-->
+            <android.widget.Button
+                android:id="@+id/btn_3"
+                android:layout_height="68dp"
+                android:layout_columnWeight="1"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/btn_rounded"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/black"
+                android:textSize="32sp" />
+            <!--                除法符号-->
+            <android.widget.Button
+                android:id="@+id/btn_division_sign"
+                android:layout_height="68dp"
+                android:layout_columnWeight="1"
+                android:background="@drawable/btn_rounded"
+                android:backgroundTint="@color/sign_btn_bg"
+                android:gravity="center"
+                android:text="÷"
+                android:textColor="@color/black"
+                android:textSize="32sp" />
 
-                <!--                数字6-->
-                <android.widget.Button
-                    android:id="@+id/btn_6"
-                    android:layout_height="68dp"
-                    android:layout_columnWeight="1"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:background="@drawable/btn_rounded"
-                    android:backgroundTint="@color/white"
-                    android:gravity="center"
-                    android:text="6"
-                    android:textColor="@color/black"
-                    android:textSize="32sp" />
+            <!--                正数/负数切换-->
+            <android.widget.Button
+                android:id="@+id/btn_plus_or_minus"
+                android:layout_height="68dp"
+                android:layout_columnWeight="1"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/btn_rounded"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:text="+/-"
+                android:textColor="@color/black"
+                android:textSize="32sp" />
 
-                <!--                减法符号-->
-                <android.widget.Button
-                    android:id="@+id/btn_minus_sign"
-                    android:layout_height="68dp"
-                    android:layout_columnWeight="1"
-                    android:background="@drawable/btn_rounded"
-                    android:backgroundTint="@color/sign_btn_bg"
-                    android:gravity="center"
-                    android:text="-"
-                    android:textColor="@color/black"
-                    android:textSize="32sp" />
+            <!--                数字0-->
+            <android.widget.Button
+                android:id="@+id/btn_0"
+                android:layout_height="68dp"
+                android:layout_columnWeight="1"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/btn_rounded"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="32sp" />
 
-                <!--                数字1-->
-                <android.widget.Button
-                    android:id="@+id/btn_1"
-                    android:layout_height="68dp"
-                    android:layout_columnWeight="1"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:background="@drawable/btn_rounded"
-                    android:backgroundTint="@color/white"
-                    android:gravity="center"
-                    android:text="1"
-                    android:textColor="@color/black"
-                    android:textSize="32sp" />
+            <!--                小数点-->
+            <android.widget.Button
+                android:id="@+id/btn_dot"
+                android:layout_height="68dp"
+                android:layout_columnWeight="1"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/btn_rounded"
+                android:backgroundTint="@color/white"
+                android:gravity="center"
+                android:text="."
+                android:textColor="@color/black"
+                android:textSize="32sp" />
 
-                <!--                数字2-->
-                <android.widget.Button
-                    android:id="@+id/btn_2"
-                    android:layout_height="68dp"
-                    android:layout_columnWeight="1"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:background="@drawable/btn_rounded"
-                    android:backgroundTint="@color/white"
-                    android:gravity="center"
-                    android:text="2"
-                    android:textColor="@color/black"
-                    android:textSize="32sp" />
-
-                <!--                数字3-->
-                <android.widget.Button
-                    android:id="@+id/btn_3"
-                    android:layout_height="68dp"
-                    android:layout_columnWeight="1"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:background="@drawable/btn_rounded"
-                    android:backgroundTint="@color/white"
-                    android:gravity="center"
-                    android:text="3"
-                    android:textColor="@color/black"
-                    android:textSize="32sp" />
-
-                <!--                加法符号-->
-                <android.widget.Button
-                    android:id="@+id/btn_plus_sign"
-                    android:layout_height="68dp"
-                    android:layout_columnWeight="1"
-                    android:background="@drawable/btn_rounded"
-                    android:backgroundTint="@color/sign_btn_bg"
-                    android:gravity="center"
-                    android:text="+"
-                    android:textColor="@color/black"
-                    android:textSize="32sp" />
-
-                <!--                正数/负数切换-->
-                <android.widget.Button
-                    android:id="@+id/btn_plus_or_minus"
-                    android:layout_height="68dp"
-                    android:layout_columnWeight="1"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:background="@drawable/btn_rounded"
-                    android:backgroundTint="@color/white"
-                    android:gravity="center"
-                    android:text="+/-"
-                    android:textColor="@color/black"
-                    android:textSize="32sp" />
-
-                <!--                数字0-->
-                <android.widget.Button
-                    android:id="@+id/btn_0"
-                    android:layout_height="68dp"
-                    android:layout_columnWeight="1"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:background="@drawable/btn_rounded"
-                    android:backgroundTint="@color/white"
-                    android:gravity="center"
-                    android:text="0"
-                    android:textColor="@color/black"
-                    android:textSize="32sp" />
-
-                <!--                小数点-->
-                <android.widget.Button
-                    android:id="@+id/btn_dot"
-                    android:layout_height="68dp"
-                    android:layout_columnWeight="1"
-                    android:layout_marginEnd="5dp"
-                    android:layout_marginBottom="5dp"
-                    android:background="@drawable/btn_rounded"
-                    android:backgroundTint="@color/white"
-                    android:gravity="center"
-                    android:text="."
-                    android:textColor="@color/black"
-                    android:textSize="32sp" />
-
-                <!--                等于号-->
-                <android.widget.Button
-                    android:id="@+id/btn_equal_sign"
-                    android:layout_height="68dp"
-                    android:layout_columnWeight="1"
-                    android:background="@drawable/btn_rounded"
-                    android:backgroundTint="@color/primary"
-                    android:gravity="center"
-                    android:text="="
-                    android:textColor="@color/white"
-                    android:textSize="32sp" />
-            </GridLayout>
-        </LinearLayout>
+            <!--                等于号-->
+            <android.widget.Button
+                android:id="@+id/btn_equal_sign"
+                android:layout_height="68dp"
+                android:layout_columnWeight="1"
+                android:background="@drawable/btn_rounded"
+                android:backgroundTint="@color/primary"
+                android:gravity="center"
+                android:text="="
+                android:textColor="@color/white"
+                android:textSize="32sp" />
+        </GridLayout>
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
