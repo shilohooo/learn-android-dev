@@ -7,4 +7,5 @@
     <color name="error">#DE576D</color>
     <color name="success">#36AD6A</color>
     <color name="secondary">#eceded</color>
+    <color name="sign_btn_bg">#f6f6f6</color>
 </resources>
