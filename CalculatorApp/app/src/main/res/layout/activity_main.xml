@@ -41,7 +41,7 @@
                 android:layout_columnSpan="4"
                 android:layout_marginBottom="10dp"
                 android:autofillHints="123"
-                android:hint="0"
+                android:hint="@string/result_hint"
                 android:inputType="text"
                 android:padding="10dp"
                 android:textAlignment="textEnd"
@@ -58,7 +58,7 @@
                 android:background="@drawable/btn_rounded"
                 android:backgroundTint="@color/sign_btn_bg"
                 android:gravity="center"
-                android:text="Clear"
+                android:text="@string/btn_clear_text"
                 android:textAllCaps="false"
                 android:textColor="@color/error"
                 android:textSize="32sp" />
@@ -72,7 +72,7 @@
                 android:background="@drawable/btn_rounded"
                 android:backgroundTint="@color/sign_btn_bg"
                 android:gravity="center"
-                android:text="Delete"
+                android:text="@string/btn_del_text"
                 android:textAllCaps="false"
                 android:textColor="@color/warning"
                 android:textSize="32sp" />
@@ -88,13 +88,15 @@
                 android:background="@drawable/btn_rounded"
                 android:backgroundTint="@color/sign_btn_bg"
                 android:gravity="center"
-                android:text="x²"
+                android:text="@string/btn_square_text"
+                android:textAllCaps="false"
                 android:textColor="@color/black"
-                android:textSize="32sp" />
+                android:textSize="32sp"
+                android:textStyle="italic" />
 
             <!--                取模运算符号-->
             <android.widget.Button
-                android:id="@+id/btn_modulo_sign"
+                android:id="@+id/btn_modulo"
                 android:layout_height="68dp"
                 android:layout_columnWeight="1"
                 android:layout_marginEnd="5dp"
@@ -102,25 +104,25 @@
                 android:background="@drawable/btn_rounded"
                 android:backgroundTint="@color/sign_btn_bg"
                 android:gravity="center"
-                android:text="%"
+                android:text="@string/btn_modulo_text"
                 android:textColor="@color/black"
                 android:textSize="32sp" />
 
             <!--                加法符号-->
             <android.widget.Button
-                android:id="@+id/btn_plus_sign"
+                android:id="@+id/btn_plus"
                 android:layout_height="68dp"
                 android:layout_columnWeight="1"
                 android:background="@drawable/btn_rounded"
                 android:backgroundTint="@color/sign_btn_bg"
                 android:gravity="center"
-                android:text="+"
+                android:text="@string/btn_plus_text"
                 android:textColor="@color/black"
                 android:textSize="32sp" />
 
             <!--                数字7-->
             <android.widget.Button
-                android:id="@+id/btn_7"
+                android:id="@+id/btn_seven"
                 android:layout_height="68dp"
                 android:layout_columnWeight="1"
                 android:layout_marginEnd="5dp"
@@ -128,13 +130,13 @@
                 android:background="@drawable/btn_rounded"
                 android:backgroundTint="@color/white"
                 android:gravity="center"
-                android:text="7"
+                android:text="@string/btn_seven_text"
                 android:textColor="@color/black"
                 android:textSize="32sp" />
 
             <!--                数字8-->
             <android.widget.Button
-                android:id="@+id/btn_8"
+                android:id="@+id/btn_eight"
                 android:layout_height="68dp"
                 android:layout_columnWeight="1"
                 android:layout_marginEnd="5dp"
@@ -142,13 +144,13 @@
                 android:background="@drawable/btn_rounded"
                 android:backgroundTint="@color/white"
                 android:gravity="center"
-                android:text="8"
+                android:text="@string/btn_eight_text"
                 android:textColor="@color/black"
                 android:textSize="32sp" />
 
             <!--                数字9-->
             <android.widget.Button
-                android:id="@+id/btn_9"
+                android:id="@+id/btn_nine"
                 android:layout_height="68dp"
                 android:layout_columnWeight="1"
                 android:layout_marginEnd="5dp"
@@ -156,25 +158,25 @@
                 android:background="@drawable/btn_rounded"
                 android:backgroundTint="@color/white"
                 android:gravity="center"
-                android:text="9"
+                android:text="@string/btn_nine_text"
                 android:textColor="@color/black"
                 android:textSize="32sp" />
 
             <!--                减法符号-->
             <android.widget.Button
-                android:id="@+id/btn_minus_sign"
+                android:id="@+id/btn_minus"
                 android:layout_height="68dp"
                 android:layout_columnWeight="1"
                 android:background="@drawable/btn_rounded"
                 android:backgroundTint="@color/sign_btn_bg"
                 android:gravity="center"
-                android:text="-"
+                android:text="@string/btn_minus_text"
                 android:textColor="@color/black"
                 android:textSize="32sp" />
 
             <!--                数字4-->
             <android.widget.Button
-                android:id="@+id/btn_4"
+                android:id="@+id/btn_four"
                 android:layout_height="68dp"
                 android:layout_columnWeight="1"
                 android:layout_marginEnd="5dp"
@@ -182,13 +184,13 @@
                 android:background="@drawable/btn_rounded"
                 android:backgroundTint="@color/white"
                 android:gravity="center"
-                android:text="4"
+                android:text="@string/btn_four_text"
                 android:textColor="@color/black"
                 android:textSize="32sp" />
 
             <!--                数字5-->
             <android.widget.Button
-                android:id="@+id/btn_5"
+                android:id="@+id/btn_five"
                 android:layout_height="68dp"
                 android:layout_columnWeight="1"
                 android:layout_marginEnd="5dp"
@@ -196,13 +198,13 @@
                 android:background="@drawable/btn_rounded"
                 android:backgroundTint="@color/white"
                 android:gravity="center"
-                android:text="5"
+                android:text="@string/btn_five_text"
                 android:textColor="@color/black"
                 android:textSize="32sp" />
 
             <!--                数字6-->
             <android.widget.Button
-                android:id="@+id/btn_6"
+                android:id="@+id/btn_six"
                 android:layout_height="68dp"
                 android:layout_columnWeight="1"
                 android:layout_marginEnd="5dp"
@@ -210,26 +212,26 @@
                 android:background="@drawable/btn_rounded"
                 android:backgroundTint="@color/white"
                 android:gravity="center"
-                android:text="6"
+                android:text="@string/btn_six_text"
                 android:textColor="@color/black"
                 android:textSize="32sp" />
 
             <!--                乘法符号-->
             <android.widget.Button
-                android:id="@+id/btn_multiplication_sign"
+                android:id="@+id/btn_multiplication"
                 android:layout_height="68dp"
                 android:layout_columnWeight="1"
                 android:background="@drawable/btn_rounded"
                 android:backgroundTint="@color/sign_btn_bg"
                 android:gravity="center"
-                android:text="x"
+                android:text="@string/btn_multiplication_text"
                 android:textAllCaps="false"
                 android:textColor="@color/black"
                 android:textSize="32sp" />
 
             <!--                数字1-->
             <android.widget.Button
-                android:id="@+id/btn_1"
+                android:id="@+id/btn_one"
                 android:layout_height="68dp"
                 android:layout_columnWeight="1"
                 android:layout_marginEnd="5dp"
@@ -237,13 +239,13 @@
                 android:background="@drawable/btn_rounded"
                 android:backgroundTint="@color/white"
                 android:gravity="center"
-                android:text="1"
+                android:text="@string/btn_one_text"
                 android:textColor="@color/black"
                 android:textSize="32sp" />
 
             <!--                数字2-->
             <android.widget.Button
-                android:id="@+id/btn_2"
+                android:id="@+id/btn_two"
                 android:layout_height="68dp"
                 android:layout_columnWeight="1"
                 android:layout_marginEnd="5dp"
@@ -251,13 +253,13 @@
                 android:background="@drawable/btn_rounded"
                 android:backgroundTint="@color/white"
                 android:gravity="center"
-                android:text="2"
+                android:text="@string/btn_two_text"
                 android:textColor="@color/black"
                 android:textSize="32sp" />
 
             <!--                数字3-->
             <android.widget.Button
-                android:id="@+id/btn_3"
+                android:id="@+id/btn_three"
                 android:layout_height="68dp"
                 android:layout_columnWeight="1"
                 android:layout_marginEnd="5dp"
@@ -265,18 +267,18 @@
                 android:background="@drawable/btn_rounded"
                 android:backgroundTint="@color/white"
                 android:gravity="center"
-                android:text="3"
+                android:text="@string/btn_three_text"
                 android:textColor="@color/black"
                 android:textSize="32sp" />
             <!--                除法符号-->
             <android.widget.Button
-                android:id="@+id/btn_division_sign"
+                android:id="@+id/btn_division"
                 android:layout_height="68dp"
                 android:layout_columnWeight="1"
                 android:background="@drawable/btn_rounded"
                 android:backgroundTint="@color/sign_btn_bg"
                 android:gravity="center"
-                android:text="÷"
+                android:text="@string/btn_division_text"
                 android:textColor="@color/black"
                 android:textSize="32sp" />
 
@@ -290,13 +292,13 @@
                 android:background="@drawable/btn_rounded"
                 android:backgroundTint="@color/white"
                 android:gravity="center"
-                android:text="+/-"
+                android:text="@string/btn_plus_or_minus_text"
                 android:textColor="@color/black"
                 android:textSize="32sp" />
 
             <!--                数字0-->
             <android.widget.Button
-                android:id="@+id/btn_0"
+                android:id="@+id/btn_zero"
                 android:layout_height="68dp"
                 android:layout_columnWeight="1"
                 android:layout_marginEnd="5dp"
@@ -304,7 +306,7 @@
                 android:background="@drawable/btn_rounded"
                 android:backgroundTint="@color/white"
                 android:gravity="center"
-                android:text="0"
+                android:text="@string/btn_zero_text"
                 android:textColor="@color/black"
                 android:textSize="32sp" />
 
@@ -318,19 +320,19 @@
                 android:background="@drawable/btn_rounded"
                 android:backgroundTint="@color/white"
                 android:gravity="center"
-                android:text="."
+                android:text="@string/btn_dot_text"
                 android:textColor="@color/black"
                 android:textSize="32sp" />
 
             <!--                等于号-->
             <android.widget.Button
-                android:id="@+id/btn_equal_sign"
+                android:id="@+id/btn_equal"
                 android:layout_height="68dp"
                 android:layout_columnWeight="1"
                 android:background="@drawable/btn_rounded"
                 android:backgroundTint="@color/primary"
                 android:gravity="center"
-                android:text="="
+                android:text="@string/btn_equal_text"
                 android:textColor="@color/white"
                 android:textSize="32sp" />
         </GridLayout>

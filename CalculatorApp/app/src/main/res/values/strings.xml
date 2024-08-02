@@ -1,3 +1,32 @@
 <resources>
     <string name="app_name">Calculator App</string>
+    <!--    button-->
+    <string name="btn_clear_text">Clear</string>
+    <string name="btn_del_text">Delete</string>
+    <string name="result_hint">0</string>
+    <string name="btn_square_text">x²</string>
+
+    <!--    operators-->
+    <string name="btn_modulo_text">%</string>
+    <string name="btn_plus_text">+</string>
+    <string name="btn_minus_text">-</string>
+    <string name="btn_multiplication_text">*</string>
+    <string name="btn_division_text">÷</string>
+
+    <!--    numbers-->
+    <string name="btn_zero_text">0</string>
+    <string name="btn_one_text">1</string>
+    <string name="btn_two_text">2</string>
+    <string name="btn_three_text">3</string>
+    <string name="btn_four_text">4</string>
+    <string name="btn_five_text">5</string>
+    <string name="btn_six_text">6</string>
+    <string name="btn_seven_text">7</string>
+    <string name="btn_eight_text">8</string>
+    <string name="btn_nine_text">9</string>
+
+    <!--    symbols-->
+    <string name="btn_dot_text">.</string>
+    <string name="btn_equal_text">=</string>
+    <string name="btn_plus_or_minus_text">+/-</string>
 </resources>
