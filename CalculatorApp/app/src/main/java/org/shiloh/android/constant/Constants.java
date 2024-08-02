@@ -9,6 +9,7 @@ import java.util.regex.Pattern;
  * @date 2024/8/1 22:11
  */
 public final class Constants {
+
     private Constants() {}
 
     /**
@@ -50,4 +51,14 @@ public final class Constants {
      * 正则：判断是否输入的是有效的数字，包含小数点
      */
     public static final Pattern NUMBER_PATTERN = Pattern.compile("^\\d+([.]\\d+)?$");
+
+    /**
+     * 正则：判断是否输入的是有效的运算符
+     */
+    public static final Pattern OPERATOR_PATTERN = Pattern.compile("^[+\\-*÷%]+$");
+
+    /**
+     * 空字符串
+     */
+    public static final String EMPTY_STR = "";
 }
