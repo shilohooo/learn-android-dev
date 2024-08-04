@@ -221,20 +221,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * @date 2024/8/4 12:31
      */
     private void handleInputOperator(String btnText) {
-        if (StringUtils.isBlank(this.operator)) {
+        if (StringUtils.isBlank(this.firstNum)) {
+            this.showToast("请先输入第一个数字");
+            return;
+        }
+
+        if (StringUtils.isNotBlank(this.calcResult)) {
+            // 已有计算结果了，把计算结果作为第一个数字
+            this.firstNum = this.calcResult;
+            this.secondNum = Constants.EMPTY_STR;
             this.operator = btnText;
             this.refreshDisplayExpression();
             return;
         }
 
-        // 处理重复点击运算符
-        if (StringUtils.isBlank(this.calcResult)) {
-            return;
-        }
-
-        // 已有计算结果了，把计算结果作为第一个数字
-        this.firstNum = this.calcResult;
-        this.secondNum = Constants.EMPTY_STR;
         this.operator = btnText;
         this.refreshDisplayExpression();
     }
