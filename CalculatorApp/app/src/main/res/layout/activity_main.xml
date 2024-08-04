@@ -78,27 +78,11 @@
                 android:textColor="@color/warning"
                 android:textSize="32sp" />
 
-            <!--                求平方-->
-            <android.widget.Button
-                android:id="@+id/btn_square"
-                android:layout_height="68dp"
-                android:layout_columnSpan="2"
-                android:layout_columnWeight="1"
-                android:layout_marginEnd="5dp"
-                android:layout_marginBottom="5dp"
-                android:background="@drawable/btn_rounded"
-                android:backgroundTint="@color/sign_btn_bg"
-                android:gravity="center"
-                android:text="@string/btn_square_text"
-                android:textAllCaps="false"
-                android:textColor="@color/black"
-                android:textSize="32sp"
-                android:textStyle="italic" />
-
             <!--                取模运算符号-->
             <android.widget.Button
                 android:id="@+id/btn_modulo"
                 android:layout_height="68dp"
+                android:layout_columnSpan="3"
                 android:layout_columnWeight="1"
                 android:layout_marginEnd="5dp"
                 android:layout_marginBottom="5dp"
@@ -113,6 +97,7 @@
             <android.widget.Button
                 android:id="@+id/btn_plus"
                 android:layout_height="68dp"
+                android:layout_columnSpan="1"
                 android:layout_columnWeight="1"
                 android:background="@drawable/btn_rounded"
                 android:backgroundTint="@color/sign_btn_bg"
@@ -283,24 +268,11 @@
                 android:textColor="@color/black"
                 android:textSize="32sp" />
 
-            <!--                正数/负数切换-->
-            <android.widget.Button
-                android:id="@+id/btn_plus_or_minus"
-                android:layout_height="68dp"
-                android:layout_columnWeight="1"
-                android:layout_marginEnd="5dp"
-                android:layout_marginBottom="5dp"
-                android:background="@drawable/btn_rounded"
-                android:backgroundTint="@color/white"
-                android:gravity="center"
-                android:text="@string/btn_plus_or_minus_text"
-                android:textColor="@color/black"
-                android:textSize="32sp" />
-
             <!--                数字0-->
             <android.widget.Button
                 android:id="@+id/btn_zero"
                 android:layout_height="68dp"
+                android:layout_columnSpan="2"
                 android:layout_columnWeight="1"
                 android:layout_marginEnd="5dp"
                 android:layout_marginBottom="5dp"

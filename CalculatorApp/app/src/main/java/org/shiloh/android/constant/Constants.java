@@ -10,7 +10,8 @@ import java.util.regex.Pattern;
  */
 public final class Constants {
 
-    private Constants() {}
+    private Constants() {
+    }
 
     /**
      * 加法符号
@@ -25,12 +26,12 @@ public final class Constants {
     /**
      * 乘法符号
      */
-    public static final String MULTIPLICATION_SIGN  = "*";
+    public static final String MULTIPLICATION_SIGN = "*";
 
     /**
      * 除法符号
      */
-    public static final String DIVISION_SIGN = "/";
+    public static final String DIVISION_SIGN = "÷";
 
     /**
      * 取模符合
