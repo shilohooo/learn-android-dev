@@ -70,8 +70,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         this.editText = super.findViewById(R.id.result);
         // 给界面上的全部按钮添加点击事件
         // 清除、退格按钮
-        super.findViewById(R.id.btn_backspace).setOnClickListener(this);
         super.findViewById(R.id.btn_clear).setOnClickListener(this);
+        super.findViewById(R.id.btn_backspace).setOnClickListener(this);
         // 运算符按钮
         super.findViewById(R.id.btn_modulo).setOnClickListener(this);
         super.findViewById(R.id.btn_plus).setOnClickListener(this);
@@ -246,6 +246,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      * @date 2024/8/4 12:32
      */
     private void handleInputNumber(String btnText) {
+        // 有计算结果了，重新输入第一位数
+        if (StringUtils.isNotBlank(this.calcResult)) {
+            this.clear();
+            this.firstNum = btnText;
+            this.refreshDisplayExpression();
+            return;
+        }
+
         if (StringUtils.isBlank(this.firstNum)) {
             this.firstNum = btnText;
             this.refreshDisplayExpression();
