@@ -22,3 +22,7 @@
 | 6 | [ImageDisplay](./ImageDisplay) | 图像显示 | 3.5 |
 | 7 | [CalculatorApp](./CalculatorApp) | 一个简单的计算器实现 | 3.6 |
 | 8 | [ActivityNavigation](./ActivityNavigation) | 活动页面的启动和结束 | 4.1.1
+
+## License
+
+[MIT](./LICENSE) Copyright (c) 2024 shiloh
