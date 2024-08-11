@@ -2,6 +2,14 @@
 
 > 参考书籍：Android Studio 开发实战：从零基础到 App 上线（第 3 版）
 
+## 开发环境
+
+| 名称 | 版本 | 文档 | 备注 |
+| :---: | :---: | :---: | :---: |
+| Azul Zulu OpenJDK | 1.8.0_352 | https://www.azul.com/downloads/?package=jdk#zulu | JDK |
+| Gradle | 8.4、8.7 | https://docs.gradle.org/current/userguide/userguide.html | 项目构建、依赖管理
+| Android Studio | Koala 2024.1.1 Patch 2 | https://developer.android.com/studio | IDE |
+
 ## 示例导航
 
 | 序号 | 目录名称 | 相关内容 | 对应章节 |
