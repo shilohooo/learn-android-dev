@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Activity Navigation</string>
+    <string name="btn_next_page">Next Page</string>
+    <string name="img_back_desc">back to last page</string>
+    <string name="btn_back">Finish!!!</string>
+    <string name="tv_remark">按返回键，或者点击左上角的箭头图标，或者点击下面的完成按钮，均可关闭当前页面、返回上个页面</string>
+</resources>
