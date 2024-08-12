@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Activity Lifecycle</string>
+    <string name="btn_next_page">Next Page</string>
+    <string name="btn_back">Back</string>
+</resources>
