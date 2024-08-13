@@ -6,9 +6,9 @@
 
 | 名称 | 版本 | 文档 | 备注 |
 | :---: | :---: | :---: | :---: |
-| Azul Zulu OpenJDK | 1.8.0_352 | https://www.azul.com/downloads/?package=jdk#zulu | JDK |
-| Gradle | 8.4、8.7 | https://docs.gradle.org/current/userguide/userguide.html | 项目构建、依赖管理
-| Android Studio | Koala 2024.1.1 Patch 2 | https://developer.android.com/studio | IDE |
+| Azul Zulu OpenJDK | 1.8.0_352 | <https://www.azul.com/downloads/?package=jdk#zulu> | JDK |
+| Gradle | 8.4、8.7 | <https://docs.gradle.org/current/userguide/userguide.html> | 项目构建、依赖管理 |
+| Android Studio | Koala 2024.1.1 Patch 2 | <https://developer.android.com/studio> | IDE |
 
 ## 示例导航
 
@@ -23,6 +23,7 @@
 | 7 | [CalculatorApp](./CalculatorApp) | 一个简单的计算器实现 | 3.6 |
 | 8 | [ActivityNavigation](./ActivityNavigation) | 活动页面的启动和结束 | 4.1.1 |
 | 9 | [ActivityLifeCycle](./ActivityLifecycle) | 活动页面的生命周期 | 4.1.2 |
+| 10 | [ActivityLaunchMode](./ActivityLaunchMode/) | 活动页面的启动模式 | 4.1.3 |
 
 ## License
 
