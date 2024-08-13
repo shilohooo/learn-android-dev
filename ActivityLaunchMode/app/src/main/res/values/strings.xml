@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Activity Launch Mode</string>
+    <string name="btn_to_second_page">To Second Page</string>
+    <string name="btn_to_first_page">To First Page</string>
+    <string name="login_tips">登录页面演示，点击登录按钮跳转到主页</string>
+    <string name="btn_login">Login</string>
+    <string name="home_greeting">这里是登录后会来到的主页，登录成功后不必返回登录页面，请按返回键观察看看:)</string>
+</resources>
