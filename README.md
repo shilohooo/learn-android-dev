@@ -24,6 +24,7 @@
 | 8 | [ActivityNavigation](./ActivityNavigation) | 活动页面的启动和结束 | 4.1.1 |
 | 9 | [ActivityLifeCycle](./ActivityLifecycle) | 活动页面的生命周期 | 4.1.2 |
 | 10 | [ActivityLaunchMode](./ActivityLaunchMode/) | 活动页面的启动模式 | 4.1.3 |
+| 11 | [ActivityCommunication](./ActivityCommunication/) | 活动页面拨号&发短信 | 4.2.1 |
 
 ## License
 
