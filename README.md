@@ -26,6 +26,7 @@
 | 10 | [ActivityLaunchMode](./ActivityLaunchMode/) | 活动页面的启动模式 | 4.1.3 |
 | 11 | [ActivityCommunication](./ActivityCommunication/app/src/main/java/org/shiloh/android/MainActivity.java) | 活动页面拨号&发短信 | 4.2.1 |
 | 12 | [ActivityCommunication](./ActivityCommunication/app/src/main/java/org/shiloh/android/datainteraction/) | 活动页面数据交互 | 4.2.2 |
+| 13 | [ActivityCommunication](./ActivityCommunication/app/src/main/java/org/shiloh/android/datainteraction/register/) | 改进的活动页面数据交互 | 4.2.3 |
 
 ## License
 
