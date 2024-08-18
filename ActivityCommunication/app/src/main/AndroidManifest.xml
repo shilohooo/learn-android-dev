@@ -19,6 +19,15 @@
         android:theme="@style/Theme.ActivityCommunication"
         tools:targetApi="31">
         <activity
+            android:name=".datainteraction.register.RegisterRequestActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".datainteraction.normal.NormalResponseActivity"
             android:exported="false" />
         <activity
