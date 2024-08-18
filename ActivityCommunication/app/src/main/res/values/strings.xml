@@ -6,4 +6,6 @@
     <string name="send_msg">我是准备要发送到指定页面中的数据</string>
     <string name="btn_send_txt">发送消息到指定页面</string>
     <string name="btn_receive_txt">收到消息，点击返回</string>
+    <string name="btn_send_data_txt">发送请求数据</string>
+    <string name="btn_response_txt">返回应答消息</string>
 </resources>

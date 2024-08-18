@@ -72,5 +72,7 @@ public class NormalSendActivity extends AppCompatActivity implements View.OnClic
 
         public static final String REQUEST_TIME = "request_time";
         public static final String REQUEST_MSG = "request_msg";
+        public static final String RESPONSE_TIME = "response_time";
+        public static final String RESPONSE_MSG = "response_msg";
     }
 }
