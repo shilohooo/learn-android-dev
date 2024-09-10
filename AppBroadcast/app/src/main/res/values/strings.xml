@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">App Broadcast</string>
+    <string name="btn_send_standard_broadcast">点我发送标准广播</string>
+</resources>
