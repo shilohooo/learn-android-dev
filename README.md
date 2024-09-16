@@ -2,7 +2,7 @@
 
 > 参考书籍：Android Studio 开发实战：从零基础到 App 上线（第 3 版）
 
-## 开发环境
+## 💻 开发环境
 
 | 名称 | 版本 | 文档 | 备注 |
 | :---: | :---: | :---: | :---: |
@@ -10,7 +10,7 @@
 | Gradle | 8.4、8.7 | <https://docs.gradle.org/current/userguide/userguide.html> | 项目构建、依赖管理 |
 | Android Studio | Koala 2024.1.1 Patch 2 | <https://developer.android.com/studio> | IDE |
 
-## 示例导航
+## 🚙 示例导航
 
 | 序号 | 目录名称 | 相关内容 | 对应章节 |
 | :---: | :---: | :---: | :---: |
@@ -33,6 +33,6 @@
 | 17 | [AppBroadcast](./AppBroadcast/app/src/main/java/org/shiloh/StaticBroadcastActivity.java) | 收发应用广播 - 静态广播 | 4.3.3 |
 | 18 | [AppBroadcast](./AppBroadcast/app/src/main/java/org/shiloh/AlarmActivity.java) | 收发应用广播 - 定时器 | 4.3.4 |
 
-## License
+## 🔖 License
 
 [MIT](./LICENSE) Copyright (c) 2024 shiloh
