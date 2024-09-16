@@ -4,4 +4,8 @@
     <string name="cb_text">收到有序广播后是否中断广播？</string>
     <string name="btn_send_order_broadcast">发送有序广播</string>
     <string name="btn_send_static_broadcast">发送静态广播（使手机振动）</string>
+    <string name="ck_is_repeat_alarm">是否重复发送闹钟广播</string>
+    <string name="tx_alarm_delay">闹钟延迟间隔：</string>
+    <string name="btn_alarm_txt">设置闹钟</string>
+    <string name="alarm_msg">这里是闹钟消息</string>
 </resources>
