@@ -29,6 +29,8 @@
 | 13 | [ActivityCommunication](./ActivityCommunication/app/src/main/java/org/shiloh/android/datainteraction/register/) | 改进的活动页面数据交互 | 4.2.3 |
 | 14 | [ActivityCommunication](./ActivityCommunication/app/src/main/java/org/shiloh/android/choosephoto/) | 从相册选择照片 | 4.2.3 |
 | 15 | [AppBroadcast](./AppBroadcast/app/src/main/java/org/shiloh/MainActivity.java) | 收发应用广播 - 标准广播 | 4.3.1 |
+| 16 | [AppBroadcast](./AppBroadcast/app/src/main/java/org/shiloh/OrderBroadcastActivity.java) | 收发应用广播 - 有序广播 | 4.3.2 |
+| 17 | [AppBroadcast](./AppBroadcast/app/src/main/java/org/shiloh/StaticBroadcastActivity.java) | 收发应用广播 - 静态广播 | 4.3.3 |
 
 ## License
 

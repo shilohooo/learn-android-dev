@@ -3,4 +3,5 @@
     <string name="btn_send_standard_broadcast">点我发送标准广播</string>
     <string name="cb_text">收到有序广播后是否中断广播？</string>
     <string name="btn_send_order_broadcast">发送有序广播</string>
+    <string name="btn_send_static_broadcast">发送静态广播（使手机振动）</string>
 </resources>
