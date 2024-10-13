@@ -32,6 +32,10 @@
 | 16 | [AppBroadcast](./AppBroadcast/app/src/main/java/org/shiloh/OrderBroadcastActivity.java) | 收发应用广播 - 有序广播 | 4.3.2 |
 | 17 | [AppBroadcast](./AppBroadcast/app/src/main/java/org/shiloh/StaticBroadcastActivity.java) | 收发应用广播 - 静态广播 | 4.3.3 |
 | 18 | [AppBroadcast](./AppBroadcast/app/src/main/java/org/shiloh/AlarmActivity.java) | 收发应用广播 - 定时器 | 4.3.4 |
+| 19 | [Service](./Service/app/src/main/java/org/shiloh/android/MainActivity.java) | 操作后台服务 - 服务的启动和停止 | 4.4.1 |
+| 20 | [Service](./Service/app/src/main/java/org/shiloh/android/ImmediateBindActivity.java) | 操作后台服务 - 服务的绑定和解绑 - 立即绑定 | 4.4.2 |
+| 21 | [Service](./Service/app/src/main/java/org/shiloh/android/DelayBindActivity.java) | 操作后台服务 - 服务的绑定和解绑 - 延迟绑定 | 4.4.2 |
+| 21 | [Service](./Service/app/src/main/java/org/shiloh/android/DataInteractionActivity.java) | 操作后台服务 - 活动与服务交互 | 4.4.3 |
 
 ## 🔖 License
 
