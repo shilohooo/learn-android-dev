@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Activity Data Transfer</string>
+    <string name="page_a_text">PageA</string>
+    <string name="to_page_b_btn">to PageB</string>
+    <string name="page_b_text">pageB</string>
+    <string name="to_page_a_btn_text">to PageA</string>
+</resources>
